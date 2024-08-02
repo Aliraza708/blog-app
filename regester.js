@@ -1,7 +1,6 @@
 
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.4/firebase-app.js";
-import {
-    getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword
+import {   getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword
 } from "https://www.gstatic.com/firebasejs/10.12.4/firebase-auth.js";
 
 // Firebase configuration
@@ -16,9 +15,11 @@ const firebaseConfig = {
     measurementId: "G-DNZ8DHHNW3"
   };
 
+  
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
+
 
 // Get DOM elements
 const signUpEmail = document.getElementById("signUp_Email");
@@ -34,7 +35,6 @@ const signInBtn = document.getElementById("signIn_Btn");
 signUpBtn.addEventListener("click", () => {
     const email = signUpEmail.value;
     const password = signUpPassword.value;
-
     createUserWithEmailAndPassword(auth, email, password)
         .then((userCredential) => {
            

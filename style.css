@@ -33,19 +33,24 @@ nav div h1 span{
     color: #4DE4FF;
     cursor: pointer;
 }
-nav button{
+nav button {
     /* margin: 10px; */
   background-color: #4DE4FF;
   border: none;
   outline: none;
   height: 60px;
   width: 140px;
-  color: white;
   font-weight: 600;
   border-radius: 5px;
   font-size: 20px;
 }
-
+nav button a {
+    text-decoration: none;
+    color: white;
+}
+nav button a:hover{
+    color: white;
+}
 nav button:hover{
 
     background-color: #21B7FD;

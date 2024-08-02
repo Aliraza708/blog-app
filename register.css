@@ -12,10 +12,14 @@ body {
 	height: 100vh;
 	margin: -20px 0 50px;
 }
+form >h1{
+	margin-bottom: 20px;
+}
 
 h1 {
 	font-weight: bold;
 	margin: 0;
+	
 }
 
 h2 {
